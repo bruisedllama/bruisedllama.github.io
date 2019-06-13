@@ -1,0 +1,47 @@
+---
+---
+.cloud-background {
+    background-image: url("../images/clouds-background.png");
+    height: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative
+}
+.navbar {
+    overflow: auto;
+}
+.info {
+    margin-top: 3%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.block {
+    border: 5px double #067DA1;
+    border-radius: 10px;
+}
+.slide {
+    height: 100%;
+}
+.selectedWorks {
+    width: 100%;
+    height: 100vh;
+    // background-image:linear-gradient(#A5D2FD, #ffffff); //later implement in js
+    margin-right: auto;
+    margin-left: auto;
+}
+.current {
+}
+.hiddenSlide {
+    display:none;
+}
+.svycard {
+    background-image: url("../images/svywebsite.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative
+}
+.slidesArrow {
+    height: 20px;
+    width:auto;
+}

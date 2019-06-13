@@ -1,0 +1,17 @@
+.nav-item:hover {
+    background-color: lightblue
+}
+.nav-item {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.vertical-horizontal-center {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content:center;
+}
+.vertical-horizontal-center p{
+    margin:0;
+    text-align: center;
+}
