@@ -15,6 +15,18 @@
   margin: 0;
   text-align: center; }
 
+.titletext {
+  font-family: 'Oswald', sans-serif; }
+
+.headertext {
+  font-family: 'Oswald', sans-serif; }
+
+.bodytext {
+  font-family: 'Quattrocento Sans', sans-serif; }
+
+.maintext {
+  font-family: 'Lora', serif; }
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors

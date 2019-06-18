@@ -1,0 +1,27 @@
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+.card {
+  width: auto;
+  display: inline-block;
+  overflow: hidden; }
+
+.card-img-top {
+  height: auto;
+  width: auto; }
+
+.card-image-top:hover {
+  display: none; }
+
+.project-title {
+  text-align: center; }
+
+.project-sub {
+  text-align: center;
+  color: #505050;
+  font-size: 20px; }

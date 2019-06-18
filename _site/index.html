@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
     <title>Home</title>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -17,12 +18,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Open+Sans|Oswald|Quattrocento+Sans&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" >
+    <nav class="navbar navbar-expand-md navbar-light headertext" >
         <a class="navbar-brand" href="#">Tony Jiang</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -51,7 +54,7 @@
       </nav>
     <img src="images/clouds-background.png" id="imgref" style="display:none;">
 <div class="cloud-background">
-    <div class="vertical-horizontal-center cloud-background">
+    <div class="vertical-horizontal-center cloud-background titletext" style = "font-size: 30px">
         <p>Tony Jiang
             <br>Coder and Creator
         </p>
@@ -60,7 +63,7 @@
 <div class="container-fluid selectedWorks" id="selectedWorks">
     <div data-aos="zoom-in" style="text-align: center;">
         <input type="image" src = "images/leftarrowcloud.png" class = "slidesArrow" id = "leftArrow" onclick = "changeSlideshow(-1)">
-        <h2 style="display:inline-block">Featured Work</h2>
+        <h2 class = "headertext" style="display:inline-block">Featured Work</h2>
         <input type="image" src = "images/rightarrowcloud.png" class = "slidesArrow" id = "rightArrow" onclick = "changeSlideshow(1)">
     </div>
     <div class="row slide current">
@@ -122,7 +125,8 @@
 </body>
 <script>
     AOS.init({
-        once:true
+        once: true
     })
 </script>
+
 </html>
