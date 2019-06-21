@@ -17,14 +17,14 @@
     {% endif %}
     <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Open+Sans|Oswald|Quattrocento+Sans&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/{{page.css}}">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/{{page.css}}">
 </head>
 
 <body>
     {% include navigation.html %}
+    {% include sidebar.html %}
     {{ content }}
-    <script src="javascript/{{page.js}}"></script>
 </body>
 <script>
     AOS.init({

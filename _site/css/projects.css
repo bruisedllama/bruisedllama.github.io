@@ -19,9 +19,13 @@ hr {
   display: none; }
 
 .project-title {
-  text-align: center; }
+  text-align: center;
+  font-size: 28px; }
 
 .project-sub {
   text-align: center;
   color: #505050;
   font-size: 20px; }
+
+.width-control {
+  max-width: 400px; }
