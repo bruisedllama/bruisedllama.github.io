@@ -5,58 +5,33 @@ css: projects.css
 aos: true
 ---
 <div class="container">
-    <h2 class = "headertext" style = "text-align:center">Projects</h2>
+    <h2 class="headertext" style="text-align:center">Projects</h2>
+    {% assign count = site.data.projects | size %}
+    {% assign count = count | divided_by: 3%}
+    {% for i in (0..count)%}
     <div class="row">
+        {% for k in (0..2)%}
+        {% assign adjustment = 3 | times: i%}
+        {% assign n = adjustment | plus: k %}
+        {% if site.data.projects[n] %}
         <div class="col-sm-4">
             <div class="card width-control">
-                <!-- card images are square -->
-                <img class="card-img-top img-fluid" src="images/svy-card-image.PNG">
+                <img class="card-img-top img-fluid" src="images/{{site.data.projects[n].logo}}">
                 <div class="card-body">
-                    <h2 class="project-title maintext">Silicon Valley Youth</h2>
-                    <h3 class="project-sub maintext">2018-2020</h3>
+                    <h2 class="project-title maintext">{{site.data.projects[n].name}}</h2>
+                    <h3 class="project-sub maintext">{{site.data.projects[n].date}}</h3>
                     <hr />
                     <div class="description bodytext">
-                        <p>Silicon Valley Youth is a website that I maintained for the nonprofit organization Silicon Valley Youth</p>
+                        <p>{{site.data.projects[n].description}}</p>
                     </div>
-                    <div class = "readmore">
-                        <a href = "/projects/svy.html">Read More</a>
+                    <div class="readmore">
+                        <a href="{{site.data.projects[n].link}}">Read More</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="card width-control">
-                <!-- card images are square -->
-                <img class="card-img-top img-fluid" src="images/discord youtube logo.png">
-                <div class="card-body">
-                    <h2 class="project-title maintext">Discord Youtube Chrome Extension</h2>
-                    <h3 class="project-sub maintext">2018</h3>
-                    <hr />
-                    <div class="description bodytext">
-                        <p>This Chrome Extension enables you to show what music or video you are watching on Youtube on your discord profile</p>
-                    </div>
-                    <div class = "readmore">
-                        <a href = "">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card width-control">
-                <!-- card images are square -->
-                <img class="card-img-top img-fluid" src="images/pokechrome logo.png">
-                <div class="card-body">
-                    <h2 class="project-title maintext">PokeChrome</h2>
-                    <h3 class="project-sub maintext">2019</h3>
-                    <hr />
-                    <div class="description bodytext">
-                        This Chrome extension is a fun Pokemon collecting and trading game for your browser made during DVHACKS 2019. 
-                    </div>
-                    <div class = "readmore">
-                        <a href = "">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% endif %}
+        {% endfor %}
     </div>
+    {% endfor %}
 </div>

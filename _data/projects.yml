@@ -1,4 +1,15 @@
-- name: SILICON VALLEY YOUTH
+- name: Silicon Valley Youth
+  date: 2018-2020
   link: /projects/svy.html
+  logo: svy-card-image.PNG
+  description: Silicon Valley Youth is a website that I maintained for the nonprofit organization Silicon Valley Youth
 - name: Discord Youtube Chrome Extension
+  date: 2018
+  link: /projects/discordyt.html
+  logo: discord youtube logo.png
+  description: This Chrome Extension enables you to show what music or video you are watching on Youtube on your discord profile
 - name: PokeChrome
+  date: 2019
+  link: /projects/pokechrome.html
+  logo: pokechrome logo.png
+  description: This Chrome extension is a fun Pokemon collecting and trading game for your browser made during DVHACKS 2019. 

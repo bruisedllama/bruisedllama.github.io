@@ -1,2 +1,50 @@
 --- 
----
+--- 
+.sidebar {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 0 !important
+}
+
+.item {
+    padding: 8px;
+    color: white;
+    display: relative;
+}
+
+@media only screen and (max-width: 768px) {
+
+    [class="item"] {
+        display: inline-block;
+        vertical-align:middle;
+    }
+    [class="sidebar"] {
+        overflow-x: scroll;
+        height: 100px;
+        overflow-y: hidden;
+    }
+}
+
+.item h3 {
+    font-size: 20px;
+}
+
+.sidebar ul {
+    padding: 0px;
+}
+
+.logo {
+    max-width: 50px;
+    height: auto;
+}
