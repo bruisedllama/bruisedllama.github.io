@@ -8,6 +8,15 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
+.logo {
+    transition: transform .9s ease;
+}
+.logo:hover {
+    transform: scale(1.4);
+}
+.img-container {
+    overflow: hidden;
+}
 .card {
     width: auto;
     display: inline-block;
@@ -16,9 +25,6 @@ hr {
 .card-img-top {
     height: auto;
     width: auto;
-}
-.card-image-top:hover {
-    display: none;
 }
 .project-title {
     text-align:center;

@@ -2,7 +2,6 @@
 --- 
 .sidebar {
     position: relative;
-    height: 100%;
     width: 100%;
     z-index: 1;
     left: 0;
@@ -11,8 +10,11 @@
     overflow-y: scroll;
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
+    height: 100vh;
 }
-
+.sidebar-wrapper {
+    
+}
 .sidebar::-webkit-scrollbar {
     width: 0 !important
 }
@@ -22,22 +24,29 @@
     color: white;
     display: relative;
 }
-
+.col-md-6 {
+    padding: 10px;
+}
 @media only screen and (max-width: 768px) {
 
     [class="item"] {
         display: inline-block;
         vertical-align:middle;
+        width: 100vw;
     }
     [class="sidebar"] {
         overflow-x: scroll;
         height: 100px;
-        overflow-y: hidden;
+    }
+    [class = "wrapper"] {
+        width: max-content;
+        height: 100%;
     }
 }
 
 .item h3 {
     font-size: 20px;
+    text-align: center;
 }
 
 .sidebar ul {
@@ -47,4 +56,14 @@
 .logo {
     max-width: 50px;
     height: auto;
+    display: block;
+    margin:auto;
+}
+.project-image {
+    height: audo;
+    width: 100%;
+}
+.project-image-height {
+    height: 100%;
+    width: auto;
 }

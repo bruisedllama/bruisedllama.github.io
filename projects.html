@@ -16,7 +16,9 @@ aos: true
         {% if site.data.projects[n] %}
         <div class="col-sm-4">
             <div class="card width-control">
-                <img class="card-img-top img-fluid" src="images/{{site.data.projects[n].logo}}">
+                <div class = "img-container">
+                    <img class="card-img-top img-fluid logo" src="images/{{site.data.projects[n].logo}}">
+                </div>
                 <div class="card-body">
                     <h2 class="project-title maintext">{{site.data.projects[n].name}}</h2>
                     <h3 class="project-sub maintext">{{site.data.projects[n].date}}</h3>
