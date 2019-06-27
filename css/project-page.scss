@@ -28,7 +28,10 @@
     padding: 10px;
 }
 @media only screen and (max-width: 768px) {
-
+    [class = "content-container"] {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     [class="item"] {
         display: inline-block;
         vertical-align:middle;
