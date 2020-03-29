@@ -2,7 +2,7 @@
     <div class="sidebar">
         <div class="wrapper">
             {% for item in site.data.projects %}
-            <div class="item">
+            <div class="item" href = "{{item.link}}">
                 <h3>{{item.name}}</h3>
                 <img src="../images/{{item.logo}}" class="logo">
             </div>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
-    <title>Discord Youtube Chrome Extension</title>
+    <title>Discord Youtube Chrome Extension - Project</title>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -24,12 +24,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/project-page.css">
-    <link rel="stylesheet" href="../css/">
+    
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md navbar-light headertext">
-  <a class="navbar-brand" href="index.html">Tony Jiang</a>
+  <a class="navbar-brand" href="/">Tony Jiang</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -56,72 +56,45 @@
     </ul>
   </div>
 </nav>
-    <div class="row">
-    <div class="col-md-2">
-        <div class = "sidebar-wrapper">
-    <div class="sidebar">
-        <div class="wrapper">
-            
-            <div class="item">
-                <h3>Silicon Valley Youth</h3>
-                <img src="../images/svy-card-image.PNG" class="logo">
+    <div class="container-fluid">
+    <div class="row project-row" style = "background-color:rgb(202, 242, 255)">
+        <div class="col-md-6">
+            <h3 class="titletext">Dicord YT Chrome Extension</h3>
+            <div class="bodytext">
+                <p>Discord YT Chrome Extension is an extention that displays what youtube video/music you are
+                    listening to on your discord profile</p>
+                <p>It uses your user token or bot token to make api calls from your account and uses the wrapper
+                    discord.js for api calls</p>
+                <p>You can also choose if you want to display only music or both music and videos</p>
             </div>
-            
-            <div class="item">
-                <h3>Discord Youtube Chrome Extension</h3>
-                <img src="../images/discord youtube logo.png" class="logo">
-            </div>
-            
-            <div class="item">
-                <h3>PokeChrome</h3>
-                <img src="../images/pokechrome logo.png" class="logo">
-            </div>
-            
+        </div>
+        <div class="col-md-6">
+            <img class="project-image-height" src="../images/discordyt/popup.PNG">
         </div>
     </div>
-</div>
-
+    <div class="row" style = "background-color:rgb(255, 202, 252)">
+        <div class="col-md-6 bodytext">
+            <p>Discord TOS says they do not allow self-bots which this program is. HOWEVER, if you set the
+                status to "Playing" instead of "Listening" or "Watching", there is no way to tell if you are
+                using a self. There is an option in the extension to do that. </p>
+            <p>As long as you aren't in any public servers, it should be completely ok.</p>
+        </div>
+        <div class="col-md-6">
+            <img class="project-image" src="../images/discordyt/discordusersatus.PNG">
+        </div>
     </div>
-    <div class="col-md-10">
-        <div class="content-container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3 class="titletext">Dicord YT Chrome Extension</h3>
-                    <div class="bodytext">
-                        <p>Discord YT Chrome Extension is an extention that displays what youtube video/music you are
-                            listening to on your discord profile</p>
-                        <p>It uses your user token or bot token to make api calls from your account and uses the wrapper
-                            discord.js for api calls</p>
-                        <p>You can also choose if you want to display only music or both music and videos</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <img class="project-image-height" src="../images/discordyt/popup.PNG">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <img class="project-image" src="../images/discordyt/discordusersatus.PNG">
-                </div>
-                <div class="col-md-6 bodytext">
-                    <p>Discord TOS says they do not allow self-bots which this program is. HOWEVER, if you set the
-                        status to "Playing" instead of "Listening" or "Watching", there is no way to tell if you are
-                        using a self. There is an option in the extension to do that. </p>
-                    <p>As long as you aren't in any public servers, it should be completely ok.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>To download the extension, clone or download the zip from my github at <a target="_blank"
-                            href="https://github.com/bruisedllama/YT-Discord-Chrome-Extension">Discord YT Chrome
-                            Extension</a></p>
-                    <p>Go into your Chrome extensions page and make sure developer's mode is on. Unzip the folder and
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <img class = "project-image" src = "../images/discordyt/extensionpage.PNG">
-                </div>
-            </div>
+    <div class="row">
+        <div class="col-md-6">
+            <p>To download the extension, clone or download the zip from my github at <a target="_blank"
+                    href="https://github.com/bruisedllama/YT-Discord-Chrome-Extension">Discord YT Chrome
+                    Extension</a></p>
+            <p>Go into your Chrome extensions page and make sure developer's mode is on. Unzip the folder and press Load
+                Unpacked. Select the unzipped folder in the popup that appears. Click on the extension in the top right
+                of your chrome window and follow the directions to use. GLHF!
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img class="project-image" src="../images/discordyt/extensionpage.PNG">
         </div>
     </div>
 </div>
@@ -131,5 +104,5 @@
         once: true
     })
 </script>
-
+<script src = "../javascript/project-page.js"></script>
 </html>

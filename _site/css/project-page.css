@@ -1,46 +1,12 @@
-.sidebar {
-  position: relative;
-  width: 100%;
-  z-index: 1;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  overflow: -moz-scrollbars-none;
-  -ms-overflow-style: none;
-  height: 100vh; }
-
-.sidebar::-webkit-scrollbar {
-  width: 0 !important; }
-
-.item {
-  padding: 8px;
-  color: white;
-  display: relative; }
-
 .col-md-6 {
   padding: 10px; }
 
-@media only screen and (max-width: 768px) {
-  [class="content-container"] {
-    padding-left: 10px;
-    padding-right: 10px; }
-
-  [class="item"] {
-    display: inline-block;
-    vertical-align: middle;
-    width: 100vw; }
-
-  [class="sidebar"] {
-    overflow-x: scroll;
-    height: 100px; }
-
-  [class="wrapper"] {
-    width: max-content;
-    height: 100%; } }
 .item h3 {
   font-size: 20px;
   text-align: center; }
+
+.project-col {
+  padding: 30px; }
 
 .sidebar ul {
   padding: 0px; }

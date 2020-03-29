@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+    <title>PokéChrome - Project</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Open+Sans|Oswald|Quattrocento+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/project-page.css">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light headertext">
+  <a class="navbar-brand" href="/">Tony Jiang</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      
+      <li class="nav-item">
+        <a class="nav-link" href="/" >Home</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="/about.html" >About</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="/projects.html" >Projects</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="/drawings.html" >Drawings</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+    <div class="content-container">
+    <div class="row">
+        <div class="col-md-6 project-col">
+            <h3 class="titletext">PokéChrome</h3>
+            <p class="bodytext">PokéChrome is a Chrome Extension I created during DVHACKS 2019. This fun Pokémon
+                collector also features a Pokémon market where you can trade with other users, including your friends!
+                You can also view your other friend's party. Go Collect Them All!</p>
+            <p>This project was made in collaboration with Allen Chang. Github: <a target="_blank"
+                    href="https://github.com/Sylverost">Sylverost</a>. Website: <a target="_blank"
+                    href="https://sylverost.com">sylverost.com</a></p>
+        </div>
+        <div class="col-md-6 project-col">
+            <img class="project-image" src="../images/pokechromeimages/pokechromedashboard.PNG">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img class="project-image" src="../images/pokechromeimages/pokemonspawn.PNG">
+        </div>
+        <div class="col-md-6 bodytext">
+            <p>Here you can see how the Pokémon appear on your screen. You can set it to spawn periodically or manually
+                spawn one yourself (this feature basically makes it so you can cheat but whatever...).</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 bodytext">
+            <p>This is the dashboard where you can see your cash. We also made an account system but passwords are
+                currently unhashed so please don't use your real password. </p>
+            <p>Install the extension by going to Chrome Extensions page - > Turn on Developer Mode - > Download the
+                extension here: <a target="_blank" href="https://github.com/bruisedllama/PokeChrome">PokéChrome</a> - >
+                Unzip the zip file or clone the repository - > On your extensions page press "Load Unpacked" and select
+                the folder - > Click on the extension on the top right hand corner of the screen and login.</p>
+        </div>
+        <div class="col-md-6">
+            <img class="project-image" src="../images/pokechromeimages/PokeChromePopup.png">
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    AOS.init({
+        once: true
+    })
+</script>
+<script src = "../javascript/project-page.js"></script>
+</html>

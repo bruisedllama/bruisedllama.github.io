@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
-    <title>Silicon Valley Youth</title>
+    <title>Silicon Valley Youth - Project</title>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -24,12 +24,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/project-page.css">
-    <link rel="stylesheet" href="../css/">
+    
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md navbar-light headertext">
-  <a class="navbar-brand" href="index.html">Tony Jiang</a>
+  <a class="navbar-brand" href="/">Tony Jiang</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -56,77 +56,48 @@
     </ul>
   </div>
 </nav>
+    <div class="content-container">
     <div class="row">
-    <div class="col-md-2">
-        <div class = "sidebar-wrapper">
-    <div class="sidebar">
-        <div class="wrapper">
-            
-            <div class="item">
-                <h3>Silicon Valley Youth</h3>
-                <img src="../images/svy-card-image.PNG" class="logo">
-            </div>
-            
-            <div class="item">
-                <h3>Discord Youtube Chrome Extension</h3>
-                <img src="../images/discord youtube logo.png" class="logo">
-            </div>
-            
-            <div class="item">
-                <h3>PokeChrome</h3>
-                <img src="../images/pokechrome logo.png" class="logo">
-            </div>
-            
+        <div class="col-md-6">
+            <h3 class="titletext">Silicon Valley Youth</h3>
+            <p class="bodytext">Silicon Valley Youth is a nonprofit organization based in Silicon Valley that
+                seeks to bring quality extracurricular education to middle and early high school students as
+                well as helping underserved school districts and families. SVY has donated over fifty thousand
+                dollars to these school districts and continues to do so.</p>
+            <p class="bodytext">I am the webmaster that maintains and updates the website. Some of my additions
+                have been an email system and a payment system. </p>
+            <p class="bodytext"><a target="_blank" href="https://www.siliconvalleyyouth.com/">Silicon Valley
+                    Youth</a></p>
+        </div>
+        <div class="col-md-6">
+            <img class="project-image" src="../images/svyimages/svywebsite.PNG">
         </div>
     </div>
-</div>
-
+    <div class="row">
+        <div class="col-md-6">
+            <img class="project-image" src="../images/svyimages/svypayment.PNG">
+        </div>
+        <div class="col-md-6 bodytext">
+            <p>The payment system I implemented uses the Stripe api as well as a remote Node.js server to ensure
+                secure payments. This payment system made it easier for SVY to track their income as well as
+                create a further committment to attending the class.</p>
+            <p> We used to ask for payment on the second class so we had a lot of no-shows which affected those
+                on the waitlist. This payment greatly decreased the no-show rate and also made refunds and
+                payment checks much easier since we had payment records.</p>
+        </div>
     </div>
-    <div class="col-md-10">
-        <div class="content-container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3 class="titletext">Silicon Valley Youth</h3>
-                    <p class="bodytext">Silicon Valley Youth is a nonprofit organization based in Silicon Valley that
-                        seeks to bring quality extracurricular education to middle and early high school students as
-                        well as helping underserved school districts and families. SVY has donated over fifty thousand
-                        dollars to these school districts and continues to do so.</p>
-                    <p class="bodytext">I am the webmaster that maintains and updates the website. Some of my additions
-                        have been an email system and a payment system. </p>
-                    <p class="bodytext"><a target="_blank" href="https://www.siliconvalleyyouth.com/">Silicon Valley
-                            Youth</a></p>
-                </div>
-                <div class="col-md-6">
-                    <img class="project-image" src="../images/svyimages/svywebsite.PNG">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <img class="project-image" src="../images/svyimages/svypayment.PNG">
-                </div>
-                <div class="col-md-6 bodytext">
-                    <p>The payment system I implemented uses the Stripe api as well as a remote Node.js server to ensure
-                        secure payments. This payment system made it easier for SVY to track their income as well as
-                        create a further committment to attending the class.</p>
-                    <p> We used to ask for payment on the second class so we had a lot of no-shows which affected those
-                        on the waitlist. This payment greatly decreased the no-show rate and also made refunds and
-                        payment checks much easier since we had payment records.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 bodytext">
-                    <p>I implemented the Email system for SVY to save emails for further outreach. These emails were
-                        saved in an interesting way: google sheets. Since I was not the one sending emails and I wanted
-                        the presidents to be able to access emails easily, google sheets was a fast, accessible, and
-                        secure way to store emails</p>
-                    <p>I also used google sheets to record payment information, omitting private information of course,
-                        so that teachers could easily see who had paid and which students have signed up for their
-                        class. This was used in conjunction with Stripe's more detailed transaction history. </p>
-                </div>
-                <div class="col-md-6">
-                    <img class="project-image" src="../images/svyimages/svyemail.PNG">
-                </div>
-            </div>
+    <div class="row">
+        <div class="col-md-6 bodytext">
+            <p>I implemented the Email system for SVY to save emails for further outreach. These emails were
+                saved in an interesting way: google sheets. Since I was not the one sending emails and I wanted
+                the presidents to be able to access emails easily, google sheets was a fast, accessible, and
+                secure way to store emails</p>
+            <p>I also used google sheets to record payment information, omitting private information of course,
+                so that teachers could easily see who had paid and which students have signed up for their
+                class. This was used in conjunction with Stripe's more detailed transaction history. </p>
+        </div>
+        <div class="col-md-6">
+            <img class="project-image" src="../images/svyimages/svyemail.PNG">
         </div>
     </div>
 </div>
@@ -136,5 +107,5 @@
         once: true
     })
 </script>
-
+<script src = "../javascript/project-page.js"></script>
 </html>

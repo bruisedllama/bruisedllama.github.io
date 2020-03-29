@@ -16,3 +16,27 @@
   link: /projects/pokechrome.html
   logo: pokechrome logo.png
   description: This Chrome extension is a fun Pokemon collecting and trading game for your browser made during DVHACKS 2019. 
+- name: What Happened Here
+  id: whathappenedhere
+  date: 2019
+  link: /projects/whathappenedhere.html
+  logo: whathappenedhere.png
+  description: This game was made for an English 11H Final Project and was inspired by the book The Grapes of Wrath. Built using godot, an open source game engine. 
+- name: FaceCompiler
+  id: face
+  date: 2019
+  link: /projects/facecompiler.html
+  logo: facecompiler.png
+  description: Built during MatadorHacks 2019, this program uses OpenCV to detect facial structure and aligns them to a reference image to create facial montages. See example use case <a target = "_blank" href = "https://www.youtube.com/watch?v=65nfbW-27ps"> here </a>
+- name: CoffeeBreak
+  id: coffee
+  date: 2019
+  link: /projects/coffeebreak.html
+  logo: coffeebreak.png
+  description: Built during LAHACKS 2019, this program is a caffeine tracker web app. Visit the website <a target = "_blank" href = "https://bruisedllama.github.io/CoffeeBreakUI/"> CoffeeBreak </a>
+- name: RedditInvestment
+  id: redditinvestment
+  date: 2018 
+  link: /projects/redditinvestment.html
+  logo: redditinvestment.png
+  description: Built during HSHacks 2018, this program scrapes "investment" subreddits (such as r/wallstreetbets) and uses a questionable sentiment calculator to make dubious investment decisions automatically and hopefully earns you money
